@@ -1,5 +1,6 @@
 package com.example.input
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import java.lang.reflect.Modifier
@@ -17,6 +18,7 @@ fun FormDataDiri(modifier: Modifier){
     val gender: List<String>= listof("Laki-laki","Perempuan")
 
     Column(modifier= Modifier.padding(top= 50.dp),
+        verticalArrangement = Arrangement.Top,
         )
 
 
