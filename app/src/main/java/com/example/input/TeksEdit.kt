@@ -114,21 +114,23 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxWidth(1f),
             enabled = textAlamat.isNotEmpty(),
             onClick = {
-                nama=textNama
-                jenis=textJK
-                alamat=textAlamat
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
             }
         ) {
             Text(stringResource(R.string.submit))
         }
         HorizontalDivider(
-            modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
-                id = R.dimen.padding_medium
-            )),
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
+                    id = R.dimen.padding_medium
+                )
+            ),
             thickness = dimensionResource(R.dimen.divider_tipis),
             color = Color.DarkGray
         )
-        ElevatedCard (
+        ElevatedCard(
             elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
             colors = CardDefaults.cardColors(containerColor = Color.Black),
             modifier = Modifier
@@ -136,7 +138,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .width(300.dp)
 
         ) {
-
+            Column(modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp),) {
+                Text(text = "Nama   : " + nama, color = Color.White)
+                Text(text = "Gender : " + jenis, color = Color.White)
+                Text(text = "Alamat : " + alamat, color = Color.White)
+            }
         }
     }
 }
