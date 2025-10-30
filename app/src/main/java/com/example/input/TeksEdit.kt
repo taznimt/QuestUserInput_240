@@ -27,6 +27,7 @@ fun FormDataDiri(modifier: Modifier){
             value = textNama,
             singleline = true,
             shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(width = 250.dp),
         )
     }
 
