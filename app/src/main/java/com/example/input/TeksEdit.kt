@@ -16,5 +16,8 @@ fun FormDataDiri(modifier: Modifier){
 
     val gender: List<String>= listof("Laki-laki","Perempuan")
 
+    Column(modifier= Modifier.padding(top= 50.dp),
+        )
+
 
 }
