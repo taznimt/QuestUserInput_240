@@ -11,5 +11,7 @@ fun FormDataDiri(modifier: Modifier){
     var textJK by remember { mutableSetOf(value = "") }
 
     var nama by remember { mutableSetOf(value = "") }
+    var alamat by remember { mutableSetOf(value = "") }
+
 
 }
