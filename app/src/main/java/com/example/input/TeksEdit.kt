@@ -8,5 +8,5 @@ import java.lang.reflect.Modifier
 fun FormDataDiri(modifier: Modifier){
     var textNama by remember { mutableSetOf(value = "") }
     var textAlamat by remember { mutableSetOf(value = "") }
-
+    var textJK by remember { mutableSetOf(value = "") }
 }
