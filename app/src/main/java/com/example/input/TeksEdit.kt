@@ -2,6 +2,7 @@ package com.example.input
 
 import android.text.Layout
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import java.lang.reflect.Modifier
@@ -21,7 +22,10 @@ fun FormDataDiri(modifier: Modifier){
     Column(modifier= Modifier.padding(top= 50.dp),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally){
+        OutlinedTextField(
+            value = textNama,
 
+        )
     }
 
 
