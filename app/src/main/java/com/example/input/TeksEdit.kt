@@ -198,7 +198,21 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                         modifier = Modifier.fillMaxWidth()
                     )
                     Spacer(modifier = Modifier.height(16.dp))
-                }
+                    Text("JENIS KELAMIN", fontWeight = FontWeight.Bold)
+                    genderList.forEach { item ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .selectable(
+                                    selected = textJkel == item,
+                                    onClick = { textJkel = item }
+                                )
+                                .padding(vertical = 4.dp)
+                        ) {
+
+                        }
+                    }
 
             }
         }
