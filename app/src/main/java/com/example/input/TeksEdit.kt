@@ -213,7 +213,9 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                             RadioButton(selected = textJkel == item, onClick = { textJkel = item })
                             Text(text = item)
                         }
-                        Spacer(modifier = Modifier.height(16.dp))
+                    }
+                    Spacer(modifier = Modifier.height(16.dp))
+
                         Text("STATUS PERKAWINAN", fontWeight = FontWeight.Bold)
                         statusList.forEach { item ->
                             Row(
@@ -226,10 +228,13 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                                     )
                                     .padding(vertical = 4.dp)
                             ) {
-                                RadioButton(selected = textStatus == item, onClick = { textStatus = item })
+                                RadioButton(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item })
                                 Text(text = item)
                             }
-                            }
+                        }
+                    Spacer(modifier = Modifier.height(16.dp))
 
                         }
                     }
@@ -237,4 +242,4 @@ fun FormDaftar(modifier: Modifier = Modifier) {
             }
         }
     }
-}
+
