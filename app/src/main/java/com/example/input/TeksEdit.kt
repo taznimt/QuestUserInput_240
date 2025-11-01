@@ -187,6 +187,16 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                 colors = CardDefaults.cardColors(containerColor = Color.White),
                 elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
             ) {
+                Column(modifier = Modifier.padding(16.dp)) {
+                    Text("NAMA LENGKAP", fontWeight = FontWeight.Bold)
+                    OutlinedTextField(
+                        value = textNama,
+                        onValueChange = { textNama = it },
+                        label = { Text("Isikan nama lengkap") },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
 
             }
         }
