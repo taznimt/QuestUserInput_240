@@ -148,5 +148,5 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 }
 @Composable
 fun FormDaftar(modifier: Modifier = Modifier) {
-
+    var textNama by remember { mutableStateOf("") }
 }
