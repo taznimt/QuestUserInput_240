@@ -245,6 +245,12 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                         modifier = Modifier.fillMaxWidth()
                     )
                     Spacer(modifier = Modifier.height(24.dp))
+                    Button(
+                        onClick = { /* Aksi submit nanti diatur */ },
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text("Submit")
+                    }
 
                         }
                     }
