@@ -161,5 +161,6 @@ fun FormDaftar(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier
             .fillMaxSize()
+            .padding(20.dp)
     )
 }
