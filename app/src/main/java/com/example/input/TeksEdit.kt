@@ -152,4 +152,6 @@ fun FormDaftar(modifier: Modifier = Modifier) {
     var textAlamat by remember { mutableStateOf("") }
     var textJkel by remember { mutableStateOf("") }
     var textStatus by remember { mutableStateOf("") }
+
+    val genderList = listOf("Laki-laki", "Perempuan")
 }
