@@ -214,6 +214,20 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                             Text(text = item)
                         }
                         Spacer(modifier = Modifier.height(16.dp))
+                        Text("STATUS PERKAWINAN", fontWeight = FontWeight.Bold)
+                        statusList.forEach { item ->
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .selectable(
+                                        selected = textStatus == item,
+                                        onClick = { textStatus = item }
+                                    )
+                                    .padding(vertical = 4.dp)
+                            ) {
+
+                            }
 
                         }
                     }
