@@ -162,5 +162,9 @@ fun FormDaftar(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .padding(20.dp)
-    )
+    ) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+
+        }
+    }
 }
