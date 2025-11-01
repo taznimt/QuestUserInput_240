@@ -236,6 +236,15 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                         }
                     Spacer(modifier = Modifier.height(16.dp))
 
+                    Text("ALAMAT", fontWeight = FontWeight.Bold)
+                    OutlinedTextField(
+                        value = textAlamat,
+                        onValueChange = { textAlamat = it },
+                        label = { Text("Masukkan alamat lengkap") },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
                         }
                     }
 
