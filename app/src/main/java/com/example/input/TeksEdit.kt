@@ -151,5 +151,5 @@ fun FormDaftar(modifier: Modifier = Modifier) {
     var textNama by remember { mutableStateOf("") }
     var textAlamat by remember { mutableStateOf("") }
     var textJkel by remember { mutableStateOf("") }
-
+    var textStatus by remember { mutableStateOf("") }
 }
