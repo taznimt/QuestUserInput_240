@@ -210,6 +210,10 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                                 )
                                 .padding(vertical = 4.dp)
                         ) {
+                            RadioButton(selected = textJkel == item, onClick = { textJkel = item })
+                            Text(text = item)
+                        }
+                        Spacer(modifier = Modifier.height(16.dp))
 
                         }
                     }
