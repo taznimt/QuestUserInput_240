@@ -1,6 +1,7 @@
 package com.example.input
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -155,4 +156,8 @@ fun FormDaftar(modifier: Modifier = Modifier) {
 
     val genderList = listOf("Laki-laki", "Perempuan")
     val statusList = listOf("Janda", "Lajang", "Duda")
+
+    Box(
+        modifier = modifier
+    )
 }
