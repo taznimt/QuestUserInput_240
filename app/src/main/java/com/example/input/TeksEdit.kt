@@ -244,6 +244,7 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth()
                     )
+                    Spacer(modifier = Modifier.height(24.dp))
 
                         }
                     }
