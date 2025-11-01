@@ -226,7 +226,9 @@ fun FormDaftar(modifier: Modifier = Modifier) {
                                     )
                                     .padding(vertical = 4.dp)
                             ) {
-
+                                RadioButton(selected = textStatus == item, onClick = { textStatus = item })
+                                Text(text = item)
+                            }
                             }
 
                         }
